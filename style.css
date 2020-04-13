@@ -2,6 +2,14 @@
     display: flex;
 }
 img{
-    width: 175px;
-    height: 200px;
+    margin-top: 20px;
+    width: 262.5px;
+    height: 300px;
+}
+a{
+    display: inline-block;
+    padding: 10px;
+}
+#intro{
+    margin-left: 15px;
 }
