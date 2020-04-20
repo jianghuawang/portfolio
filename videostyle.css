@@ -1,0 +1,20 @@
+#video-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(480px,auto));
+    grid-template-columns: repeat(3,minmax(360px,auto));
+}
+.videocell{
+    margin: 8px auto;
+}
+#video-caption{
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    display: inline-block;
+    padding: 10px;
+}
+html{
+    font-family: "Open Sans", sans-serif;
+}

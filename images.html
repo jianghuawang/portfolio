@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jianghua's pages</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="activateTab('#imagestab')">
+    <div class="navbar">
+    </div>
+    <script type="text/javascript" >
+        $(function(){
+          $(".navbar").load("navbar.html");
+        });
+    </script>
+    <div>
+        <h2>Some of My favorite pictures</h2>
+    </div>
+    <div class="image-container">
+        <div>
+            <img class="image-picture" src="files/selftake1.jpeg">
+        </div>
+        <div>
+            <img class="image-picture" src="files/selftake2.jpeg">
+        </div>
+        <div>
+            <img class="image-picture" src="files/selftake3.jpeg">
+        </div>
+        <div>
+            <img class="image-picture" src="files/selftake4.jpeg">
+        </div>
+    </div>
+</body>
+</html>

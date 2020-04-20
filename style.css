@@ -1,15 +1,83 @@
-.main-body{
+.index-body{
     display: flex;
 }
-img{
-    margin-top: 20px;
+#selfie{
+    margin-top: 16px;
     width: 262.5px;
     height: 300px;
 }
-a{
+body{
+    background-image: url(files/background.png);
+    width: 100%;
+}
+.header div h1{
+    color: #FFFFFF;
+}
+.navbar{
+    background-color: #212121;
+    display: flex;
+}
+.navbar > div > a{
     display: inline-block;
     padding: 10px;
+    text-decoration: none;
+    color:#f2f2f2;
+}
+.navbar div a:hover{
+    background-color: whitesmoke;
+    color:#000000;
 }
 #intro{
     margin-left: 15px;
+}
+html{
+    font-family: "Open Sans", sans-serif;
+}
+.project{
+    display: flex;
+    height: 320px;
+    padding: 16px;
+}
+.project-img{
+    max-width: 500px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.project-description{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 16px;
+}
+.project-img a img{
+    max-width: 100%;
+}
+
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,auto));
+    grid-gap: 2rem;
+}
+
+.image-picture{
+    max-width: 400px;
+    max-height: 400px;  
+    margin: 0px auto;
+    display: block;
+}
+
+.video-item{
+    height: 380px;
+    padding: 16px;
+}
+.video-cell{
+    max-width: 480px;
+    display: block;
+}
+.video-cell iframe{
+    max-width: 100%;
+}
+.video-caption{
+    max-width: 480px;
+    text-align: center;
 }

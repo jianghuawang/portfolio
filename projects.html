@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jianghua's Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="activateTab('#projectstab')">
+    <div class="navbar">
+    </div>
+    <script type="text/javascript" >
+        $(function(){
+          $(".navbar").load("navbar.html");
+        });
+    </script>
+    <div class="projects">
+        <div class="project">
+            <div class="project-img">
+                <a href="https://github.com/jianghuawang/AntVS.Bees">
+                    <img src="files/antvsbee-mainpage.png">
+                </a>
+            </div>
+            <div class="project-description">
+                <p>
+                    <strong>Ants VS. Bees</strong>
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-img">
+                <a href="https://github.com/jianghuawang/Yelpmap">
+                    <img class="project-img" src="files/map.png">
+                </a>
+            </div>
+            <div class="project-description">
+                <p>
+                    <strong>Yelp Map</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
