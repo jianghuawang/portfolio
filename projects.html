@@ -9,14 +9,22 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="activateTab('#projectstab')">
+<body>
     <div class="navbar">
+        <div id="hometab">
+            <a href="index.html">Home</a>
+        </div>
+        <div id="imagestab">
+            <a href="images.html">Images</a>
+        </div>
+        <div id="videostab">
+            <a href="videos.html">Videos</a>
+        </div>
+        <div id="projectstab" class="current">
+            <a href="projects.html">Projects</a>
+        </div>
     </div>
-    <script type="text/javascript" >
-        $(function(){
-          $(".navbar").load("navbar.html");
-        });
-    </script>
+    </div>
     <div class="projects">
         <div class="project">
             <div class="project-img">
@@ -42,6 +50,9 @@
                 </p>
             </div>
         </div>
+    </div>    
+    <div>
+        <button id="back" onclick="backtoTop()">Back to Top</button>
     </div>
 </body>
 </html>

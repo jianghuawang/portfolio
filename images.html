@@ -9,30 +9,69 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
-<body onload="activateTab('#imagestab')">
+<body>
     <div class="navbar">
+        <div id="hometab">
+            <a href="index.html">Home</a>
+        </div>
+        <div id="imagestab" class="current">
+            <a href="images.html">Images</a>
+        </div>
+        <div id="videostab">
+            <a href="videos.html">Videos</a>
+        </div>
+        <div id="projectstab">
+            <a href="projects.html">Projects</a>
+        </div>
     </div>
-    <script type="text/javascript" >
-        $(function(){
-          $(".navbar").load("navbar.html");
-        });
-    </script>
     <div>
-        <h2>Some of My favorite pictures</h2>
+        <h2>Some pictures</h2>
     </div>
     <div class="image-container">
         <div>
-            <img class="image-picture" src="files/selftake1.jpeg">
+            <img id="image-1" class="image-picture" onclick="enlarge('#image-1')" src="files/selftake1.jpeg">
         </div>
         <div>
-            <img class="image-picture" src="files/selftake2.jpeg">
+            <img id="image-2" class="image-picture" onclick="enlarge('#image-2')" src="files/selftake2.jpeg">
         </div>
         <div>
-            <img class="image-picture" src="files/selftake3.jpeg">
+            <img id="image-3" class="image-picture" onclick="enlarge('#image-3')" src="files/selftake3.jpeg">
         </div>
         <div>
-            <img class="image-picture" src="files/selftake4.jpeg">
+            <img id="image-4"  class="image-picture" onclick="enlarge('#image-4')" src="files/selftake4.jpeg">
+        </div>
+        <div>
+            <img id="image-5" class="image-picture" onclick="enlarge('#image-5')" src="files/selftake5.jpeg">
+        </div>
+        <div>
+            <img id="image-6" class="image-picture" onclick="enlarge('#image-6')" src="files/selftake6.jpeg">
+        </div>
+        <div>
+            <img id="image-7" class="image-picture" onclick="enlarge('#image-7')" src="files/selftake7.jpeg">
+        </div>
+        <div>
+            <img id="image-8" class="image-picture" onclick="enlarge('#image-8')" src="files/selftake8.jpeg">
+        </div>
+        <div>
+            <img id="image-9" class="image-picture" onclick="enlarge('#image-9')" src="files/selftake9.jpeg">
+        </div>
+        <div>
+            <img id="image-10" class="image-picture" onclick="enlarge('#image-10')" src="files/selftake10.jpeg">
         </div>
     </div>
+    <div>
+        <button id="back" onclick="backtoTop()"><img src="files/backtotop.png"></button>
+    </div>
+    <div id="enlargeview" class="frame">
+        <img class="content" id="img01">
+    </div>
+    <script type="text/javascript">
+        var frame = document.getElementById('enlargeview');
+        window.onclick = function(event) {
+            if (event.target == frame) {
+                frame.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
