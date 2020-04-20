@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
-<body onload="activateTab('#hometab')">
+<body onload="activateTab('#imagestab')">
     <div class="navbar">
     </div>
     <script type="text/javascript" >
@@ -17,17 +17,21 @@
           $(".navbar").load("navbar.html");
         });
     </script>
-    <div class="index-body">
-        <div> 
-            <img id="selfie" src="files/sample.png">
+    <div>
+        <h2>Some of My favorite pictures</h2>
+    </div>
+    <div class="image-container">
+        <div>
+            <img class="image-picture" src="files/selftake1.jpeg">
         </div>
-        <div id="intro">
-            <h2>
-                Jianghua Wang
-            </h2>
-            <p> 
-                Machine Learning enthusiast, self-motivated engineering undergraduate. 
-            </p>
+        <div>
+            <img class="image-picture" src="files/selftake2.jpeg">
+        </div>
+        <div>
+            <img class="image-picture" src="files/selftake3.jpeg">
+        </div>
+        <div>
+            <img class="image-picture" src="files/selftake4.jpeg">
         </div>
     </div>
 </body>

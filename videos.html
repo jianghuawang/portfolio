@@ -4,12 +4,12 @@
     <title>Jianghua's pages</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="script.js"></script>
 </head>
-<body onload="activateTab('#hometab')">
+<body onload="activateTab('#videostab')">
     <div class="navbar">
     </div>
     <script type="text/javascript" >
@@ -17,17 +17,14 @@
           $(".navbar").load("navbar.html");
         });
     </script>
-    <div class="index-body">
-        <div> 
-            <img id="selfie" src="files/sample.png">
-        </div>
-        <div id="intro">
-            <h2>
-                Jianghua Wang
-            </h2>
-            <p> 
-                Machine Learning enthusiast, self-motivated engineering undergraduate. 
-            </p>
+    <div id="video-grid">
+        <div class="video-item">
+            <div class="video-cell">
+                <iframe height="360" width="480" with src="https://www.youtube.com/embed/FCaWv7VLnS4"></iframe>
+            </div>
+            <div class="video-caption">
+                <h4>Video of Playing Ants VS. Bees</h4>
+            </div>
         </div>
     </div>
 </body>
