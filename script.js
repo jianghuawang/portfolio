@@ -14,8 +14,8 @@ function backtoTop(){
 }
 
 function enlarge(myimg){
-    var modal=document.getElementById("myModal");
-    var modalImg = document.getElementById("img01");
-    modal.style.display="flex";
-    modalImg.src=document.querySelector(myimg).src;
+    var frame=document.getElementById("enlargeview");
+    var contentlImg = document.getElementById("img01");
+    frame.style.display="flex";
+    contentlImg.src=document.querySelector(myimg).src;
 }

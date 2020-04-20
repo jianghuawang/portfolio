@@ -62,16 +62,14 @@
     <div>
         <button id="back" onclick="backtoTop()"><img src="files/backtotop.png"></button>
     </div>
-    <div id="myModal" class="modal">
-        <img class="modal-content" id="img01">
+    <div id="enlargeview" class="frame">
+        <img class="content" id="img01">
     </div>
     <script type="text/javascript">
-        // Get the modal
-        var modal = document.getElementById('myModal');
-        // When the user clicks anywhere outside of the modal, close it
+        var frame = document.getElementById('enlargeview');
         window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            if (event.target == frame) {
+                frame.style.display = "none";
             }
         }
     </script>
