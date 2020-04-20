@@ -29,16 +29,34 @@
     </div>
     <div class="image-container">
         <div>
-            <img class="image-picture" onclick="enlarge(src)" src="files/selftake1.jpeg">
+            <img id="image-1" class="image-picture" onclick="enlarge('#image-1')" src="files/selftake1.jpeg">
         </div>
         <div>
-            <img class="image-picture" src="files/selftake2.jpeg">
+            <img id="image-2" class="image-picture" onclick="enlarge('#image-2')" src="files/selftake2.jpeg">
         </div>
         <div>
-            <img class="image-picture" src="files/selftake3.jpeg">
+            <img id="image-3" class="image-picture" onclick="enlarge('#image-3')" src="files/selftake3.jpeg">
         </div>
         <div>
-            <img class="image-picture" src="files/selftake4.jpeg">
+            <img id="image-4"  class="image-picture" onclick="enlarge('#image-4')" src="files/selftake4.jpeg">
+        </div>
+        <div>
+            <img id="image-5" class="image-picture" onclick="enlarge('#image-5')" src="files/selftake5.jpeg">
+        </div>
+        <div>
+            <img id="image-6" class="image-picture" onclick="enlarge('#image-6')" src="files/selftake6.jpeg">
+        </div>
+        <div>
+            <img id="image-7" class="image-picture" onclick="enlarge('#image-7')" src="files/selftake7.jpeg">
+        </div>
+        <div>
+            <img id="image-8" class="image-picture" onclick="enlarge('#image-8')" src="files/selftake8.jpeg">
+        </div>
+        <div>
+            <img id="image-9" class="image-picture" onclick="enlarge('#image-9')" src="files/selftake9.jpeg">
+        </div>
+        <div>
+            <img id="image-10" class="image-picture" onclick="enlarge('#image-10')" src="files/selftake10.jpeg">
         </div>
     </div>
     <div>
@@ -46,6 +64,16 @@
     </div>
     <div id="myModal" class="modal">
         <img class="modal-content" id="img01">
-      </div>
+    </div>
+    <script type="text/javascript">
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -12,10 +12,10 @@ function backtoTop(){
     document.body.scrollTop=0;
     document.documentElement.scrollTop=0;
 }
-function enlarge(mysrc){
-    var modal=document.getElementById("myModel");
-    var modalImg = document.getElementById("img01");
-    modal.style.display="block";
-    modalImg.src=mysrc;
 
+function enlarge(myimg){
+    var modal=document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    modal.style.display="flex";
+    modalImg.src=document.querySelector(myimg).src;
 }
